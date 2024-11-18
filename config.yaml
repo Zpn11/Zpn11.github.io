@@ -135,18 +135,18 @@ params:
     # roundImage: true # Make hero image circular | default false
     button:
       enable: true
-      name: "Resume"
-      url: "#"
+      name: "Contact"
+      url: "#contact"
       download: true
       newPage: false
     socialLinks:
       fontAwesomeIcons:
-        - icon: fab fa-github
+        - icon: fab fa-weibo
           url: https://example.com
-        - icon: fab fa-x-twitter
+        - icon: fab fa-tiktok
           url: https://example.com
       customIcons:
-        - icon: /fav.png
+        - icon: /images/xiaohongshu.min.svg
           url: "https://example.com"
 
   # About
@@ -238,42 +238,26 @@ params:
     # title: "Custom Name"
     index: false
     items:
-      - title: "Master of Business Administration"
+      - title: "Bachelor of Business Administration"
         school:
-          name: "University of California, Berkeley"
-          url: "https://example.org"
-        date: "2013 - 2015"
-        GPA: "3.8 out of 5.0"
+          name: "Macao University of Science and technology"
+          url: "https://www.must.edu.mo/index.html"
+        date: "2023 - 2027"
         content: |-
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-      - title: "Bachelor of Science in Computer Science"
+          Take professional courses in business administration, marketing, macroeconomics, financial accounting, and more. Participated in school club activities and served as the cadre of the debate club.
+      - title: "Senior High School"
         school:
-          name: "Massachusetts Institute of Technology"
-          url: "https://example.org"
-        date: "2009 - 2013"
-        GPA: "3.9 out of 5.0"
+          name: "Hengshui No.2 High School"
+          url: "http://www.hsez.net/"
+        date: "2020 - 2023"
         content: |-
-          I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
-          - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
-          - Face mask detection using a single convolutional neural network.
-
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-        featuredLink:
-          enable: true
-          name: "My academic record"
-          url: "https://example.com"
-      - title: "High School"
+          I studied hard in high school for three years and participated in many volunteer activities. 
+      - title: "Junior High School"
         school:
-          name: "Thomas Jefferson High School for Science and Technology."
-          url: "https://example.org"
-        GPA: "4.2 out of 5.0"
-        featuredLink:
-          enable: true
-          url: "https://example.com"
+          name: "Yuhua Junior High School"
+        date: "2017 - 2020"
+        content: |-
+          I studied hard in high school for three years and participated in many volunteer activities. 
 
   # Achievements
   achievements:
@@ -299,7 +283,7 @@ params:
 
   # projects
   projects:
-    enable: true
+    enable: false
     # title: "Custom Name"
     items:
       - title: Hugo Profile
@@ -365,14 +349,12 @@ params:
       path: "blogs"
       count: 3
       title: Recent Posts
-      enable: true
+      enable: false
       disableFeaturedImage: false
     socialNetworks:
-      github: https://github.com
-      linkedin: https://linkedin.com
-      twitter: https://twitter.com
       instagram: https://instagram.com
-      facebook: https://facebook.com
+      tiktok: https://tiktok.com
+      xiaoHongShu: https://xiaohongshu.com
 
   # List pages like blogs and posts
   listPages:
