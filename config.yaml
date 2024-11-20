@@ -18,6 +18,7 @@ enableRobotsTXT: true
 # disqusShortname: your-disqus-shortname
 # googleAnalytics: G-MEASUREMENT_ID
 publishDir: "docs"
+cleanDestinationDir: true
 
 markup:
   goldmark:
@@ -58,7 +59,7 @@ params:
   title: "Nichole"
   description: Text about my cool site
   # staticPath: ""  # The path to serve the static files from
-  favicon: "/fav.png"
+  favicon: "/favicon.ico"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
@@ -220,7 +221,7 @@ params:
           name: "Yuhua Junior High School"
         date: "2017 - 2020"
         content: |-
-          I studied hard in high school for three years and participated in many volunteer activities. 
+          I spent three years in this school, met some very good teachers and laid foundation for future study.
 
   # Achievements
   achievements:

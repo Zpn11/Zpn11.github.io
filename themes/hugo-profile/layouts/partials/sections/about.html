@@ -12,15 +12,65 @@
             {{ end }}
             <div class="col-sm-12 col-md-12 col-lg-8 content">
                 {{ .Site.Params.about.content | markdownify }}
-
-                {{ if .Site.Params.about.skills.enable }}
-                {{ .Site.Params.about.skills.title }}
-                <ul>
-                    {{ range .Site.Params.about.skills.items }}
-                    <li>{{ . | markdownify }}</li>
-                    {{ end }}
+                <ul class="contacts-list">
+                
+                    <li class="contact-item">
+                
+                        <div class="icon-box">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+                
+                            <a href="mailto:1230018951@student.must.edu.mo" class="contact-link">1230018951@student.must.edu.mo</a>
+                        </div>
+                
+                    </li>
+                
+                    <li class="contact-item">
+                
+                        <div class="icon-box">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                
+                        <div class="contact-info">
+                            <p class="contact-title">Phone</p>
+                
+                            <a href="tel:+853 68048877" class="contact-link">+853 68048877</a>
+                        </div>
+                
+                    </li>
+                
+                    <li class="contact-item">
+                
+                        <div class="icon-box">
+                            <i class="fas fa-birthday-cake"></i>
+                        </div>
+                
+                        <div class="contact-info">
+                            <p class="contact-title">Birthday</p>
+                
+                            <time datetime="1982-06-23">April 27, 2005</time>
+                        </div>
+                
+                    </li>
+                
+                    <li class="contact-item">
+                
+                        <div class="icon-box">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                
+                        <div class="contact-info">
+                            <p class="contact-title">Location</p>
+                
+                            <address>Macao</address>
+                        </div>
+                
+                    </li>
+                
                 </ul>
-                {{ end }}
             </div>
         </div>
     </div>
