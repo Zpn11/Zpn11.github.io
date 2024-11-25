@@ -2,7 +2,8 @@
 <section id="projects" class="py-5">
     <div class="container">
         <h3 class="text-center">{{ .Site.Params.projects.title | default "Projects" }}</h3>
-        <div class="row justify-content-center px-3 px-md-5">
+        <div class="px-0 px-md-5 px-lg-5">
+        <div class="row justify-content-center px-3 px-md-5 px-lg-5">
             {{ range .Site.Params.projects.items }}
             {{ if .image }}
             <div class="col-lg-4 col-md-6 my-3">
@@ -43,7 +44,7 @@
             </div>
             {{ else }}
             {{/*  <ul class="list-group list-group-flush">  */}}
-                <li class="col-lg-8 bg-transparent px-3 mt-4"><a href="{{ .link }}" target="_blank">{{ .title }}</a></li>
+                <h5 class="col-lg-8 bg-transparent px-3 mt-4"><li><a href="{{ .link }}" target="_blank">{{ .title }}</a></li></h5>
             {{/*  </ul>  */}}
             {{ end }}
             {{ end }}
@@ -83,7 +84,7 @@
             </div>
             {{ end }}
             {{ end }}
-        </div>
+        </div></div>
     </div>
 </section>
 {{ end }}
