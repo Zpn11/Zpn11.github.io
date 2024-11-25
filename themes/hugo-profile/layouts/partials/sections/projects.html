@@ -4,21 +4,24 @@
         <h3 class="text-center">{{ .Site.Params.projects.title | default "Projects" }}</h3>
         <div class="row justify-content-center px-3 px-md-5">
             {{ range .Site.Params.projects.items }}
+            {{ if .image }}
             <div class="col-lg-4 col-md-6 my-3">
                 <div class="card my-3 h-100" title="{{ .title }}">
-                    <div class="card-head">
+                    <div class="card-head p-3">
                         <img class="card-img-top" src="{{ .image }}" alt="{{ .title }}">
                     </div>
-                    <div class="card-body bg-transparent p-3">
+                    <div class="bg-transparent px-3">
                         <div class="pb-2 bg-transparent">
                             {{ range .badges }}
                             <span class="badge badge-secondary">{{ . }}</span>
                             {{ end }}
                         </div>
-                        <h5 class="card-title bg-transparent mt-1">{{ .title }}</h5>
+                        <p class="card-title bg-transparent mt-1">{{ .title }}</p>
+                        {{ if .content }}
                         <div class="card-text bg-transparent secondary-font">
                             {{ .content }}
                         </div>
+                        {{ end }}
                     </div>
                     {{ if or (.links) (.featured) }}
                     <div class="card-footer py-3">
@@ -40,6 +43,11 @@
                     {{ end }}
                 </div>
             </div>
+            {{ else }}
+            {{/*  <ul class="list-group list-group-flush">  */}}
+                <li class="col-lg-8 bg-transparent px-3 mt-4"><a href="{{ .link }}" target="_blank">{{ .title }}</a></li>
+            {{/*  </ul>  */}}
+            {{ end }}
             {{ end }}
             {{ range ( where .Site.RegularPages "Type" "projects" ) }}
             {{ if .Params.showInHome | default true }}

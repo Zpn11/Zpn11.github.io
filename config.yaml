@@ -261,34 +261,26 @@ params:
     enable: true
     title: "Personal Works"
     items:
-      - title: 'Case Analysis: Gibbons v. Ogden (1824)'
+      - title: '26, July 2024'
         image: /images/projects/transcript.jpg
-        featured:
-          name: Detail
-          link: /projects/analyse
+      - title: '18, November 2024'
+        image: /images/projects/writing.jpg
+      - title: '28, April 2024'
+        image: /images/projects/dji.jpg
+
+      - title: 'Case Analysis: Gibbons v. Ogden (1824)'
+        link: /projects/analyse
 
       - title: Enterprise interview 
-        # content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
-        image: /images/projects/transcript.jpg
-        featured:
-          name: Detail
-          link: /projects/interview
+        link: /projects/interview
         # badges:
         #   - "Interview"
 
       - title: Journey Under the Midnight Sun’s Tragic Writing
-        # content: A clean and simple Hugo template for personal portfolio and blog.
-        image: /images/projects/writing.jpg
-        featured:
-          name: Detail
-          link: /pdf/writing.pdf
+        link: /pdf/writing.pdf
 
       - title: Marketing analysis of DJI
-        # content: A clean and simple Hugo template for personal portfolio and blog.
-        image: /images/projects/dji.jpg
-        featured:
-          name: Detail
-          link: /pdf/DJI.pdf
+        link: /pdf/DJI.pdf
 
   #Contact
   contact:

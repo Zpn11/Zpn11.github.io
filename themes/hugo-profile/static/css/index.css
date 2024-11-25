@@ -621,3 +621,7 @@ div.icon-box {
 .contact-info address {
     margin-bottom: 0;
 }
+
+#projects li:first {
+    margin-top: 2rem;
+}
