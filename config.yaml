@@ -25,18 +25,33 @@ markup:
     renderer:
       unsafe: true
 
-# Menus:
-#   main:
-    # - identifier: blog
-    #   name: Blog
-    #   title: Blog posts
-    #   url: /blogs
-    #   weight: 1
-    # - identifier: gallery
-    #   name: Gallery
-    #   title: Blog posts
-    #   url: /gallery
-    #   weight: 2
+Menus:
+  main:
+    - identifier: about
+      name: About
+      title: About
+      url: /#about
+      weight: 1
+    - identifier: cv
+      name: Personal CV
+      title: Personal CV
+      url: /#experience
+      weight: 2
+    - identifier: works
+      name: Personal Works
+      title: Personal Works
+      url: /#projects
+      weight: 3
+    - identifier: clife
+      name: Life
+      title: Life
+      url: /#achievements
+      weight: 4
+    - identifier: contact
+      name: Contact
+      title: Contact
+      url: /#contact
+      weight: 5
     #Dropdown menu
     # - identifier: dropdown
     #   title: Example dropdown menu
@@ -116,19 +131,19 @@ params:
       enable : true
       showOnScrollUp : true
     menus:
-      disableAbout: false
-      disableExperience: false
-      disableEducation: false
-      disableProjects: false
-      disableAchievements: false
-      disableContact: false
+      disableAbout: true
+      disableExperience: true
+      disableEducation: true
+      disableProjects: true
+      disableAchievements: true
+      disableContact: true
 
   # Hero
   hero:
     enable: true
     intro: "Hello, my name is"
-    title: "April."
-    subtitle: "A student at Macao University of Science and Technology "
+    title: "April"
+    subtitle: "an outgoing girl"
     content: "This is my personal website, you can learn about me by this website."
     image: /images/profile.jpg
     bottomImage:
@@ -243,53 +258,37 @@ params:
 
   # projects
   projects:
-    enable: false
-    # title: "Custom Name"
+    enable: true
+    title: "Personal Works"
     items:
-      - title: Hugo Profile
-        content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
-        image: /images/projects/profile.png
+      - title: 'Case Analysis: Gibbons v. Ogden (1824)'
+        image: /images/projects/transcript.jpg
         featured:
-          name: Demo
-          link: https://hugo-profile.netlify.app
-        badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
-        links:
-          - icon: fa fa-envelope
-            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/hugo-profile
-          - icon: fab fa-twitter
-            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+          name: Detail
+          link: /projects/analyse
 
-      - title: Image Converter
-        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
-        image: /images/projects/converter.jpg
+      - title: Enterprise interview 
+        # content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
+        image: /images/projects/transcript.jpg
         featured:
-          name: Demo
-          link: https://django-converter.herokuapp.com
-        badges:
-          - "Django"
-          - "Bootstrap"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/converter
+          name: Detail
+          link: /projects/interview
+        # badges:
+        #   - "Interview"
 
-      - title: Hugo Profile V2
-        content: A clean and simple Hugo template for personal portfolio and blog.
-        image: /images/projects/profile2.jpg
+      - title: Journey Under the Midnight Sun’s Tragic Writing
+        # content: A clean and simple Hugo template for personal portfolio and blog.
+        image: /images/projects/writing.jpg
         featured:
-          name: Demo V2
-          link: https://hugo-profile-2.netlify.app
-        badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/HugoProfileV2
+          name: Detail
+          link: /pdf/writing.pdf
+
+      - title: Marketing analysis of DJI
+        # content: A clean and simple Hugo template for personal portfolio and blog.
+        image: /images/projects/dji.jpg
+        featured:
+          name: Detail
+          link: /pdf/DJI.pdf
 
   #Contact
   contact:
